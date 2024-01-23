@@ -9,7 +9,7 @@ url = 'https://www.cbr.ru/key-indicators/'
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
 
-currency = soup.find_all("div", class_="col-md-5")
+currency = soup.find_all("div", class_="d-flex title-subinfo")
 
 for i in currency:
     print(i.text)
