@@ -19,7 +19,7 @@ for i in range(len(currency)):
     name = currency[i].find("div", class_="col-md-5").text.strip()
     price_el = price[i].text.strip()
 
-    print(f'{name}: {price_el}')
+    print(f'{name}:{price_el}')
 
 
 
